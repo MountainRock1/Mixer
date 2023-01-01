@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-const NUM_COLUMNS = 20;
+const NUM_COLUMNS = 7;
 
 export const stateSlice = createSlice({
   name: "state",
@@ -10,7 +10,15 @@ export const stateSlice = createSlice({
   reducers: {
     addRow(state) {
       const newRow = Array(NUM_COLUMNS).fill("");
-      state.grid.push(newRow);
+      if (state.grid.length < 2) {
+        for (let i = 0; i < 5; i++) {
+          state.grid.push(newRow);
+        }
+      }
+
+      for (let i = 0; i < state.grid; i++) {
+        console.log(state.grind[i]);
+      }
     },
     pickColor(state, action) {
       state.selectedColor = action.payload;

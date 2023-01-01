@@ -1,12 +1,17 @@
 * {
   box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
 
-html {
+.home-page {
+  background-image: url(photos/pexels-david-bares-323687.jpg);
+  background-size: cover;
+}
+
+/* html {
   background-color: #222;
   color: white;
-}
+} */
 
 #pixelate {
   display: flex;
@@ -19,6 +24,41 @@ td {
   width: 50px;
   background-color: lightgray;
   transition: background-color 0.5s ease;
+}
+
+.active-link {
+  color: white;
+  text-decoration: none;
+  font-family: cursive;
+  filter: drop-shadow(0.05em 0.05em black);
+  mix-blend-mode: difference;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  color: aqua;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-inline-end: 2rem;
+  margin-inline-start: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+h1 {
+  color: white;
+  font: 900 35vmin/50vh cookie, cursive;
+  text-align: center;
+  filter: drop-shadow(0.05em 0.05em black);
+  mix-blend-mode: difference;
 }
 
 .red {
