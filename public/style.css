@@ -1,11 +1,26 @@
 * {
   box-sizing: border-box;
   font-family: "Press Start 2P", cursive;
+  margin: 0;
+  padding: 0;
 }
 
 .home-page {
+  background-image: url(photos/pexels-elviss-railijs-bitāns-1389429.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.myprojects-page {
   background-image: url(photos/pexels-david-bares-323687.jpg);
   background-size: cover;
+  height: 100vh;
+}
+
+.sharedprojects-page {
+  background-image: url(photos/pexels-wendy-wei-1190297.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
 /* html {

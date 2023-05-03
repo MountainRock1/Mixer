@@ -1,7 +1,11 @@
 import React from "react";
 
 const SharedProjects = () => {
-  return <h1>SharedProjects Page</h1>;
+  return (
+    <div className="sharedprojects-page">
+      <h1>Shared</h1>;
+    </div>
+  );
 };
 
 export default SharedProjects;

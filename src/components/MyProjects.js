@@ -22,7 +22,7 @@ const MyProjects = () => {
   };
 
   return (
-    <div id="pixelate">
+    <div id="pixelate" className="myprojects-page">
       <div>
         <button type="button" onClick={handleSoundTest}>
           Test Sound
